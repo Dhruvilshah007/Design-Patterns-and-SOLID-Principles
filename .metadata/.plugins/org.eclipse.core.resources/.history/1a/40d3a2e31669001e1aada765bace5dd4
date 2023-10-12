@@ -1,0 +1,9 @@
+package com.company.singleresp;
+
+public class UserValidator {
+	
+	public boolean validateUser(User user) {
+		
+	}
+
+}

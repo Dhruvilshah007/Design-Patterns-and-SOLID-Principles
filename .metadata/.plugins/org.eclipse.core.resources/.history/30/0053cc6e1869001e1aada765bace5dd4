@@ -1,0 +1,18 @@
+package com.company.singleresp;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JsonToBeanConverter {
+	
+	private final ObjectMapper mapper;
+	
+	public JsonToBeanConverter() {
+        mapper = new ObjectMapper();
+    }
+	
+	
+	public     jsonToBean(String json,) {
+		mapper.readValue(userJson, User.class);
+	}
+
+}
