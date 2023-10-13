@@ -1,13 +1,4 @@
 INDEX VERSION 1.132+I:\Java Data Structures\Design patterns and SOLID Principles\.metadata\.plugins\org.eclipse.jdt.core
-489789366.index
-1205164650.index
-4288872225.index
-3975192710.index
-1705463126.index
-663504462.index
+2286777886.index
 1865797976.index
-1684994437.index
-948354920.index
-4230676179.index
-168698267.index
-281020878.index
+1560623784.index

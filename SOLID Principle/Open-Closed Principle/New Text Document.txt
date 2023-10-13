@@ -1,0 +1,10 @@
+Open for Extension- Extend existing behaviour
+Closed for Modifiction Existing code remains unchanged
+
+
+eg-in Java
+
+Baseclass
+Derived extends Baseclass and can override method this is Open for Extension
+
+We should not go and change code in base class, this is Closed for Modifiction
