@@ -1,0 +1,14 @@
+This principle states that we should be able to use subclass or child class object wherever base
+class object is expected.
+
+And this substitution should not alter desired properties of the program.
+
+
+That means if the base class object was providing a specific behavior and if that base class object
+
+is now substituted with a child class object, that behavior should not alter.
+
+Okay, so what is expected to happen in that particular code should happen even if we change the base
+
+class object with the child class object.
+
