@@ -1,0 +1,10 @@
+So , we have PersistenceService interface which is generalized and we have created UserPersistenceService class which implements persistanceService
+Similarly we have created new OrderPersistenceService which also implements PersistenceService.So, when we created this Order entity has no field of name so findByName method is useless for it and than also it needs to write code in it . So it violates ISP principle
+
+So, we throw new UnsupportedOperationException
+
+
+SOln
+
+1-Break interfaces
+2-Remove that method i.e findByName from interface

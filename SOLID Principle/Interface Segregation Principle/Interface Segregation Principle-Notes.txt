@@ -1,0 +1,22 @@
+Statement-Clients should not be forced to depend upon Interfaces that they do not use(Clients should not have to depend on methods that are defined in interfaces that they don't use.)
+
+It means interface pollution
+-We should not make our interfaces bigger
+-We should not cram methods that are unrelated in a one big interface and make all other classes in our software system or in our module implement that interface.
+
+
+Signs of Interface pollution
+
+-Classes have empty method implementations.
+-Method implementations throw UnsupportedOperationException(or similar)
+-Method implementations return null or default/dummy values.
+
+
+Break bigger Interfaces
+
+It is telling us to break those bigger interfaces so that the methods or behaviors or contracts that are defined in a particular interface are cohesive, that are related to each other.
+And we don't run into a situation where a class is forced to provide an implementation for a method for which it doesn't make any sense.
+
+
+
+
