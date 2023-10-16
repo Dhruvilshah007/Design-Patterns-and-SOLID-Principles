@@ -1,0 +1,57 @@
+Now, this principle is comes in two different parts.
+
+1-The first part states that high level modules should not depend on low level modules.Both should depend on abstraction.
+
+2-The second part of the principle tells us that abstractions should not depend on details.Rather, details should depend on abstractions.
+
+
+
+Dependency
+
+eg1-
+public void printMe(){
+	System.out.println("hello"!);
+}
+
+I'm using the print method of the out object.So out object is my dependency.
+
+eg2-
+
+public void writeReport(){
+	Report report =new Report();
+	//Build report
+	JSONFormatter formatter = new JSONFormatter();
+	String report=formatter.format(report);
+	FileWriter write=new FileWriter("report.json);
+	//write out report
+}
+
+-Well, we first of all, need something, some object, some module that will take our report object and will convert it to Json.So that particular object is our dependency.
+
+-Now then we need something which actually takes that Json string and writes onto the disk.That could be our file writer class from java.io package.So that is again another dependency of this particular function.
+
+
+What is Dependency inversion?
+-JSONFormatter and FileWriter
+-So we are instantiating these objects in our method and we are.That's why we are tightly coupling our report generation to these particular implementations.
+-eg-So if somebody comes and tells us we like the report, but we want it in HTML format, what we going to do?
+We are going to go into our report generation method and modify the code.
+What if somebody says, you know, you are writing on a disk that is not really good, We want to send that report to a different server.Why don't you just post whatever report that you generate, post that whole string to this particular URL?
+
+What are you going to do?
+You are going to.Modify your existing report generation method.
+
+And once you start messing around with code that is already written and tested, you are going to introduce or you are creating a possibility to create more bugs or defects and dependency.
+
+
+SOln:
+Dependency inversion principle is telling us that instead of tightly coupling our high level module,high level module basically means a module that provides or that implements some business rules.
+
+A low level module is basically a functionality that is so basic that it can be used anywhere.For example, writing to disk is something that is that can be used anywhere.Converting Java object to Json.This is again a low level functionality that can be used in multiple places.
+
+IMP-So now our high level module should not depend on low level modules.
+And what is telling us, it tells us that both should depend on abstraction.It could be as simple as an interface.
+eg-So instead of creating a new instance of Object Mapper or creating new instance of file writer, we can use an interface called as, let's say, writer, another interface called as Formatter.And we will write our high level module code using that interface.
+
+We are not creating new instances in our high level module.Somebody else is creating for us and giving those to us.
+
