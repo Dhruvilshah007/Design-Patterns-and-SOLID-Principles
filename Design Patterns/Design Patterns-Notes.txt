@@ -1,0 +1,16 @@
+There are 3types of design patterns
+
+1 Creational
+-So all the design patterns that belong to this group, they deal with creating objects from classes.So they will give you solutions to common problems that you will face when you're thinking about creating objects from your existing classes.
+
+2 Structural
+-So these design patterns deal with how we create or compose objects so we can add another object to our existing object.
+And that way we can have a composition.
+So these design patterns deal with how to arrange our classes and objects so that we can derive a functionality out of them.
+
+
+3 Behavioural
+
+-we have behavioral design patterns, so these design patterns deal with how classes and objects interact or communicate with each other and how we can design the interaction between groups of objects
+
+-so that we can derive a functionality or we can achieve the desired goal with these objects.
