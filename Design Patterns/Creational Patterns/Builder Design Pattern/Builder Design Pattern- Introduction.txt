@@ -1,0 +1,102 @@
+What problem Builder design pattern solves?
+
+
+Problem 1: Class constructor needs a lot of information.
+
+
+eg-
+class Product{
+	public Product(int weight,double price,int shipVolume,int shipCode){
+
+	//initialize
+	}
+}
+
+-Having a consturctor that needs a lot of arguments is considered a bad coding practice
+-So, We can have document for this parameters with description.
+
+
+
+How will Builder design pattern help here?
+
+-First of all, it will make it easy to use such constructors so that we can create objects of this class.
+
+-Second, it will help us avoid writing such constructors in first place and still have our objects immutable.
+
+
+Problem 2:Objects that need other objects or "parts" to construct them.
+
+
+eg-
+
+class Address{
+	public Address(String houseNumber,String Street...){
+	//initialize
+	}
+}
+
+class User{
+	public User(String name, Address address,LocateDate birthDate,List<Role> roles){
+	//initialize
+	}
+	//other code
+}
+
+
+-First,So you can think of these objects, the address object and the rules collection as the parts that we use to assemble our user object.
+-So whenever you have such a requirement that you need multiple parts in order to build your object,you can use builder design better.
+-Second, here first we have to create Address object,then create multiple role object and then a collection which holds on to this role objects.
+
+
+
+What is Builder design pattern?
+
+-We have acomplex process to construct an object involving multipe steps, then builder design pattern can help us.
+-Inbuilder we remove the logic related to object construction  from "client" code & abstract it in separate classes.
+
+-It consists of 4 parts
+
+1)Director
+-createProduct():Product
+-Uses builder to constrct object
+-Knows steps & their sequence to build product
+
+2)Builder
+-build():void
+-getProduct():Product
+-Role-Builder provides interface for creating parts of product.
+
+3)ConcreteBuilder
+-build():void
+-getProduct():Product
+-Role-Concrete Builder:constructs parts & assembles final product.
+-Keeps track of product it creates.
+
+4)Product
+-Role-Product:Final complex object that we want to create.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

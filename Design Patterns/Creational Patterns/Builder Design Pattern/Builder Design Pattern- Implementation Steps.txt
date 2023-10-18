@@ -1,0 +1,12 @@
+Implement a Builder
+
+1)We start by creating a builder
+
+-Identify the "parts" of product & provide methods to create those parts.
+-It should provide a method to "assemble" or build the product/Object.
+-It must provide a way/method to get fully build object out.Optionally builder can keep reference to an product it has built so the same can be returned again in future.
+
+
+2)A director can be a separate class or client can play the role of director.
+
+
