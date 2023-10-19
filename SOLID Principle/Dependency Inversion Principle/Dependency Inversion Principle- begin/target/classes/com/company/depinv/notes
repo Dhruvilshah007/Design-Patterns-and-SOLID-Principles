@@ -1,0 +1,8 @@
+Issues
+
+1-WHat if we want to print in console.We need to write System.out instead of PrintWriter
+2- WHat if we want to change format of msg.We need to change JSONFormatter to what we want.
+
+
+Solns:
+Dependency inversion will allow to remove this things.
