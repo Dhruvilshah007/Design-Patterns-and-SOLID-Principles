@@ -1,0 +1,4 @@
+-Think of builder pattern when you have a complex constructor or an object is built in multiple steps.
+-UserDTOBuilder is interface where all small small parts which needs to be assembled are there.And UserWebDTOBuilder implements all its method and write logic for it.
+-It will also have Build method which will assemble all things into one and instantiate the final object.Also have getUserDTO() method to return already build object from this builder
+-Director will require UserDTOBuilder object and User Object, which one by one gather all things and finally call build() method.It will instantiate UserDTOBuilder and User object and call his final method directBuild() where logic is return.

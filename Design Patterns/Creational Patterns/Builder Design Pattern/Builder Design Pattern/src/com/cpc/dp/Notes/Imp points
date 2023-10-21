@@ -1,0 +1,25 @@
+Design Consideration
+
+Builder 2 example is commonly used in industry
+
+-First thing that you will notice is that in the last example that we saw, you can easily create an immutable class if you implement your builder as an inner static class, because that way you can have your setter methods declared as private and avoid writing a bad constructor which needs all of the object state in the constructor itself.
+
+-The director role is rarely implemented as separate class typically the consumer of the object instance or client handles that role.
+
+-Abstract builder is also not required if "product" itself is not part of any inheritance hierarchy. You can directly create concrete builder.
+
+-If you are running into a "too many constructor arguments" problem then its a good indication that builder pattern may help.
+
+
+Example of Builder Pattern
+
+eg-ByteBuffer, CharBuffer....
+
+-So string builder satisfies the intent or purpose of builder pattern.However, as soon as we start to look a little bit deeper into the implementation and capabilities of these classes, then this particular definition or example starts to fall apart.Because one of the requirements that is given by the definition in the Gang of Four book for builder pattern is that builder has potential to build different representations of product interface using same steps.
+
+-StringBuilder is not 100% a builder implementation or builder pattern.
+
+Another eg is Builder class of java.util.Calender.Builder
+
+-
+

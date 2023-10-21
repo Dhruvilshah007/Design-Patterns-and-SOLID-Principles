@@ -1,0 +1,16 @@
+So prototype is a creational design pattern.
+
+Now, what prototype does is that it uses object cloning.So if you are familiar with object class in Java, you will remember that it has a protected method called as clone.
+
+Now what clone method does is that it clones the existing object, so it will create a copy of your existing object and return it.
+
+So that is one way to create an object and prototype design pattern basically uses this clone method in order to create objects of a class.
+
+
+Builder - We have complex constructor and builderallows us to work with that.
+Prototype-It allows to altogether skip using constructor
+
+Builder - We can create a builder as separate class and so i can work with legacy code.
+Prototype - It work using clone method, and needs to modify existing code so may not workwoth 			legacy code.
+
+-So using prototype with legacy code may not be always feasible or possible.

@@ -1,0 +1,11 @@
+Pitfall consideration points
+
+-like number of new classes that had to be added.
+-the impact or the effort that is required to Refactor your existing code.
+-the complexity to understand a particular pattern.
+
+
+Issues:
+
+-A little bit complex for new comers mainly because of 'method chaining',where buiilder methods return builder object itself.
+- Possibility of partially initialized object; user code can set only a few or none of properties using withXYZ methods and call build().If required properties are missing, build method should provide suitable defaults or throw exception.
