@@ -1,0 +1,6 @@
+We start by creating a separate class forour simple factory
+
+->Add a method which returns desired object instance.
+
+->This method is typically static and will accept some arguments to decide which class to instantiate.
+->You can also provide additional arguments which will be used to instantiate objects.

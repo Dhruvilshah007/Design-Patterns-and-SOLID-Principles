@@ -1,0 +1,28 @@
+What problem simply factory solves?
+->Multiple types can be instantiated and the choice is based on some simple criteria.
+
+
+if(key.equalsIgnoreCase("pudding")){
+   //create pudding object
+
+}else if(key.equalsIgnoreCase("cake")){
+
+  //create cake object
+}
+
+->Here we simply move instaantiation logic to a separate class and most commonly to a sattic method.
+-> SOme do not consider simple factory as design pattern, as its simply a method that encapsulates object instantion.Nothing complex goes on in that method.
+-> We are understanding this as it is often confused with "factory method" pattern.
+
+->Typically we want to do this if we have more than one option when instantiating object and a simple logic is used to choose correct class.
+
+
+class simple factory(client)-> SimpleFactory->Product
+					   productA productB(Both implements Product)
+
+Simple Factory:Provides a static method to get instance of product subclass.
+Product:Objects of this class & its subclasses are needed.
+
+
+
+ 

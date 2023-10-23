@@ -1,0 +1,1 @@
+->The criteria used by SF to decide which object to instantiate can get more convoluted/complex over time.If you find yourself in such situation then use "Factory Method design Pattern".

@@ -1,0 +1,9 @@
+Implementation Considerations
+
+->Simple Factory can be just a method in existing class.Adding a separate class however allows other parts of your code to use simple factory more easily.
+->Simple factory itself doesn't need any state tracking so its best to keep this as a static method.
+
+Design Considerations
+
+->SF will in turn may use other design pattern like builder to construct objects.
+->In case you want to specialize your SF in subclasses, you need factory method design pattern instead.

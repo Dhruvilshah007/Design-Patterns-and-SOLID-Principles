@@ -1,0 +1,10 @@
+Simple Factory-We simply move our instantiation logic away from client code.Typically in a static method.
+
+Factory method-Factory method is more useful when you want to delegate object creation to subclasses.
+
+
+
+Simple Factory-It knows about all classes whose objects it can create.
+
+Factory method-Here we don't know in advance about all product subclasses.Because the decision about which class to instantiate is delegated to subclasses of factory method.
+

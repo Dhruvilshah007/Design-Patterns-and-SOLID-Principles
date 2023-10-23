@@ -1,0 +1,16 @@
+->The java.text.NumberFormat class has getInstance method, which is an example of simple factory.
+
+
+ private static NumberFormat getInstance(LocaleProviderAdapter adapter,
+                                            Locale locale, Style formatStyle,
+                                            int choice) {
+        NumberFormatProvider provider = adapter.getNumberFormatProvider();
+        return switch (choice) {
+            case NUMBERSTYLE   -> provider.getNumberInstance(locale);
+            case PERCENTSTYLE  -> provider.getPercentInstance(locale);
+            case CURRENCYSTYLE -> provider.getCurrencyInstance(locale);
+            case INTEGERSTYLE  -> provider.getIntegerInstance(locale);
+            case COMPACTSTYLE  -> provider.getCompactNumberInstance(locale, formatStyle);
+            default            -> null;
+        };
+    }

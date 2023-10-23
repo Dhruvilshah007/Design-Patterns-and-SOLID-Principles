@@ -1,0 +1,2 @@
+->SF encapsulates away the object instantiation in a separate method(static method).
+->We can pass an argument to this method to indicate product type and/or additional arguments to help create objects.
