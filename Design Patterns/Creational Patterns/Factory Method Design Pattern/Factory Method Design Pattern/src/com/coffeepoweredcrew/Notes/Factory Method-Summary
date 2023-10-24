@@ -1,0 +1,5 @@
+->Use FM pattern when you want to delegate object instantiation to subclasses,you'd want to do this when you have "product" inheritance hierarchy and possibility of future additions to that.
+
+->Refer UML diagram.
+
+->Now, whenever a new concrete class or new concrete product is added in the product inheritance hierarchy,we can easily add a new subclass of our Creator which will handle creating object of that new class.And this is the benefit of using factory method design pattern.

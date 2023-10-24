@@ -1,0 +1,18 @@
+Why we use factory method?
+->We want to move object creation logic from our code to a separate class.
+->We use this pattern when we do notknow in advance which class we may need to instantiate beforehand & also to allow new classes to be added to system & handle their creation without affecting client code.
+->We let subclasses decide which object to instantiate by overriding the factory method.
+
+UML diagram
+
+Product-Base class or interface of products created by factory method.
+
+Concrete Product-It implements the product interface or class.
+
+Creator-Declares the abstract factory method.
+Aditionally uses the factory method to create product.
+
+Concrete Creator-Implements factory  method and returns one of concrete product instance.
+
+
+

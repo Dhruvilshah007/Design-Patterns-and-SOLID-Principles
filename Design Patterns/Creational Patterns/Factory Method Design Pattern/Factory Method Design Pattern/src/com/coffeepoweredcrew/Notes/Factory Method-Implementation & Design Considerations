@@ -1,0 +1,11 @@
+Implementations Considerations
+
+->The creator can be a concrete class & provide a default implementation for the factory method.In such cases you'll create some "default" object in base creator.
+->You can also use simple factory way of accepting additional arguments to choose between different object types.Subclasses can then override factory method to selectively create different object for some criteria.
+
+
+Design Considerations
+
+->Creator hierarchy in factory method pattern reflects the product hierarchy.We typically end up with a concrete creator per object type.
+->Template method design pattern often makes use of factory methods.
+->Another creational design pattern called "abstract factory" makes use of factory method pattern.

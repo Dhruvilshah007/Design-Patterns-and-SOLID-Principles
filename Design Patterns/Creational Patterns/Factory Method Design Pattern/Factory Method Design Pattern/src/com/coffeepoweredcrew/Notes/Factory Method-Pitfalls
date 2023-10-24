@@ -1,0 +1,6 @@
+Pitfalls
+
+
+->More complex to implement.More classes involved and need testing.
+->You have to start with factory method design pattern from the beginning.It's not easy to refactor existing code into factory method pattern.
+->Sometimes this pattern forces you to subclass just to create appropriate instance.

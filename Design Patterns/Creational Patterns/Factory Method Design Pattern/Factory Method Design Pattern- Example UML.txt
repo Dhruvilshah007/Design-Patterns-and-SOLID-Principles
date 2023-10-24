@@ -1,0 +1,12 @@
+class FactoryMethodEx
+
+
+Message<abstract>
+
+TextMessage,JSONMessage extends/Implements Message.
+
+
+MessageCreator<abstract>
+
+JSONMessageCreator implements MessageCreator and Instantiate JSONMessage Product class
+TextMessageCreator implements MessageCreator and Instantiate TextMessage Product class
