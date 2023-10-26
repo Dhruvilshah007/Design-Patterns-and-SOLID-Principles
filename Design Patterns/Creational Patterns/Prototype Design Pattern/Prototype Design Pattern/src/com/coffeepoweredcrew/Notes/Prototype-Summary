@@ -1,0 +1,9 @@
+->You will use prototype design pattern whenever creating a new instance of a class is a costly operation,or in some cases it may not be possible because the object is directly supplied to your code.
+
+->In Java we implement this pattern using the clone method, which is defined in the object class.
+
+->Objects which have majority of their state as immutable are good candidates for prototype.
+
+->When implementing clone method, you have to pay attention whether you need a deep copy or a shallow copy of your prototypes state.
+
+->We have to ensure that the clone that we are returning from our clone method is reset or initialized with appropriate state values so that the code that is using our cloned copy doesn't get affected by leftover values for state.

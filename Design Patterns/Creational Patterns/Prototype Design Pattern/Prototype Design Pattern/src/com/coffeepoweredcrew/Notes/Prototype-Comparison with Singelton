@@ -1,0 +1,12 @@
+Prototype-We return a copy of ans instance,meaning we get a different instance.
+
+Singelton-We return same instance everytime.
+
+
+
+
+Prototype-Some or even all of the state of instances created with prototypes can be different
+
+Singelton-Since its same object that is returned sate is always the same.
+
+

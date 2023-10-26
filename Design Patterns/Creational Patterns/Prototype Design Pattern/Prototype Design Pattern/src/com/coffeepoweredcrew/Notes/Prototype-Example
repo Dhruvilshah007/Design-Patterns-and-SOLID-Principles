@@ -1,0 +1,2 @@
+->Actually the Object.clone() method is an example of prototype.
+->This method is provided by Java and can clone an existing object, thus allowing any object to act as a prototype.Classes still need to be Cloneable(implement) but the method does the job of clonig.

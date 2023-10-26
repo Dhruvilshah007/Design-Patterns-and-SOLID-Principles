@@ -1,0 +1,25 @@
+Why is prototype Design Pattern?
+->We have acomplex object that is costly to create.To create more instances of such class,we use an existing instance as our prototype.
+
+->Prototype will allow us to make copies of existing object & save us from having to recreate objects from scratch.
+
+
+UML diagram
+
+Prototype<abstract>:declares a method for cloning itself.
+	clone():Protptype
+
+ConcretePrototypeA: Implements cloning method.
+	clone():ConcretePrototype
+
+ConcretePrototypeB: Implements cloning method.
+	clone():ConcretePrototype
+
+Client: Create new instance using prototype's clone method.
+
+
+
+
+
+
+

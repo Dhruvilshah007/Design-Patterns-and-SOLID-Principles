@@ -9,12 +9,14 @@ INDEX VERSION 1.132+I:\Java Data Structures\Design patterns and SOLID Principles
 4288872225.index
 1289618099.index
 2649785044.index
+192589505.index
 1357583197.index
 3975192710.index
 2368838464.index
 1409266408.index
 1705463126.index
 281020878.index
+663504462.index
 4230676179.index
 1205164650.index
 1684994437.index

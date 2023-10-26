@@ -1,0 +1,13 @@
+Implementations Considerations
+
+->Pay attention to the deep copy and shallow copy of references.Immutable fields on clones save the trouble of deep copy.
+->Make sure to reset the mutable state of object before returning the prototype.It's a good idea to implement this in method to allow subclasses to initialize.
+->clone() method is protected in Object class and must be overridden to be public to be callable from outside the class.
+->Cloneable is a "marker" interface, an indication that the class supports cloning.
+
+
+Design Considerations
+
+->Prototypes are useful when you have large objects where majority of state is unchanged between instances and you can easily identify that state.
+->A prototype registry is a class where in you can register various prototypes which other code can access to clone out instances. This solves the issue of getting access to initial instance.
+->Prototypes are useful when working with Composite and Decorator patterns.

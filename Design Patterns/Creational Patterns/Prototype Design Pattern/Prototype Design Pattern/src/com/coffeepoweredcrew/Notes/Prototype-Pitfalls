@@ -1,0 +1,5 @@
+Pitfalls
+
+->Usability depends upon the number of properties in state that are immutable or can be shalow  copied. An object where state is comprised of large number of mutable objects its compilcated to clone.
+->In java the default clone operation will only perform hallow copy so if you need a deep copy you have to implement it.
+->Subclasses may not be able to support clone and so code becomes complicated as you have to code for situations where an implementation may not support clone.

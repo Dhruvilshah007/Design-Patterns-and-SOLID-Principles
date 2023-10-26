@@ -1,0 +1,19 @@
+class PrototypeEx
+
+
+GameUnit<abstract>
+	clone():GameUnit
+	initialize():void
+	resetUnit():void
+
+
+
+Swordsman extends GameUnit
+	clone():Swordsman
+	resetUnit():void
+->It will support cloning
+	
+General extends GameUnit
+	clone():General
+	resetUnit():void
+->It will not support cloning
