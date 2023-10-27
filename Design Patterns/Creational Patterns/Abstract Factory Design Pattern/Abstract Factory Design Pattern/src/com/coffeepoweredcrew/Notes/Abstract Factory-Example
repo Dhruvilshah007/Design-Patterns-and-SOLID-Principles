@@ -1,0 +1,3 @@
+->The javax.xml.parsers.DocumentBuilderFactory is a good example of an abstract factory pattern.
+->However this implementation doesn't match 100% with UMl of Abstract factory from (GoF)previous slides.The class has a static newInstance() method which returns actual factory class object.
+->The newInstance() method however uses classpath scanning,system properties,an external property file as ways to find factory class & create factory object.So, we can change the factory class being used,even if it is a static method.

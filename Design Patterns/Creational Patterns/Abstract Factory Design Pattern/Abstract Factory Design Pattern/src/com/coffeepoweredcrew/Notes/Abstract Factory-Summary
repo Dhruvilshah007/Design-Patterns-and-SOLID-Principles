@@ -1,0 +1,5 @@
+->When you have multiple sets of objects where objects in one set work together then you can use abstract factory pattern to isolate client code from concrete objects & their families.
+-> Abstract Factory itself uses factory method design pattern, and you can think of Abstract Factory as a class which has multiple factory methods defined in it.
+->Adding a new product to our existing implementation of Abstract Factory requires changes to the base class or our interface of the abstract factory as well as well as all of the implementations of that interface.
+->concrete factories can be singleton, and the reason for that is because we are going to need only one instance of an abstract factory, and typically they don't have any state within them.
+->We provide the client code with the concrete factory instance.Factories can be changed at runtime.

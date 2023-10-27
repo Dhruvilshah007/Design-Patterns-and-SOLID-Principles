@@ -1,0 +1,34 @@
+class AbstractFactoryEx_cloud
+
+
+ResourceFactory<abstractfactory>
+	createInstance(capacity):Instance
+	createStorage(inMib):Storage
+
+GoogleCloudResourceFactory<concrete_factory>
+	createInstance(capacity):Instance
+	createStorage(inMib):Storage
+
+AwsResourceFactory<concrete_factory>
+	createInstance(capacity):Instance
+	createStorage(inMib):Storage
+
+
+
+Instance<abstract_product>
+	start():void	
+	stop():void
+	attachStorage(storage):void
+
+	Ec2Instance<concrete_product>
+	GoogleComputeEngineInstance<concrete_product>
+
+
+
+Storage<abstract_product>
+	getId():String
+	
+	S3Storage<concrete_product>
+	GoogleCloudStorage<concrete_product>
+
+Client->It will get request for provisiong machine and decide which cloud to use

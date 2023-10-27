@@ -1,0 +1,6 @@
+Pitfalls
+
+->A lot more complex to implement than factory method.
+->Adding a new product requires changes to base factory as well as ALL implementations of factory.
+->Difficult to visualize the need at start of development and usually starts out as a factory method.
+->Abstract factory Design pattern is very specific to problem of "product families".

@@ -1,0 +1,12 @@
+Implementations Considerations
+
+->Factories can be implemented as singletons, we typically ever need only one instance of it anyway.But make sure to familiarize yourself with drawbacks of singletons.
+->Adding a new product type requires changes to the base factory as well as all implementations of factory.
+->We provide the client code with concrete factory so that it can create objects.
+
+
+Design Considerations
+
+->When you want to constrain(limit) object creation so that they all work together then abstract factory is good design pattern.
+->Abstract factory itself uses factory method pattern.
+->If objects are expensive to create then you can transparently switch factory implementations to use prototype design pattern to create objects.

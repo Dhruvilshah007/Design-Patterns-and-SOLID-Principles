@@ -1,0 +1,10 @@
+Abstract Factory-Hides factories as well as concrete objects used from client
+
+Factory Method-Hides the concrete objects which are use from the client
+
+
+Abstract Factory-Suitable when multiple objects are designed to work together & client must use products from single family at a time
+
+Factory Method-Concerned with one product & its subclasses.Collaboration of product itself with each other objects is irrelevant.
+
+
